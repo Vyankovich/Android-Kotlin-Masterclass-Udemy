@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvInput"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/inputBackgroundColor"
+        android:textSize="48sp"
+        android:padding="10dp"
+        android:gravity="end|bottom|center_horizontal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnSeven"
+                android:text="@string/_7"
+                android:onClick="onDigit"
+                style="@style/NumberButtonStyle"/>
+            <Button
+                android:id="@+id/btnEight"
+                android:text="@string/_8"
+                android:onClick="onDigit"
+                style="@style/NumberButtonStyle"/>
+            <Button
+                android:id="@+id/btnNine"
+                android:text="@string/_9"
+                android:onClick="onDigit"
+                style="@style/NumberButtonStyle"/>
+            <Button
+                android:id="@+id/btnDivide"
+                android:text="@string/divide"
+                android:onClick="onOperator"
+                style="@style/ActionButtonStyle"/>
+        </LinearLayout>
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnSix"
+                android:text="@string/_6"
+                android:onClick="onDigit"
+                style="@style/NumberButtonStyle" />
+            <Button
+                android:id="@+id/btnFive"
+                android:text="@string/_5"
+                android:onClick="onDigit"
+                style="@style/NumberButtonStyle"/>
+            <Button
+                android:id="@+id/btnFour"
+                android:text="@string/_4"
+                android:onClick="onDigit"
+                style="@style/NumberButtonStyle"/>
+            <Button
+                android:id="@+id/btnMultiply"
+                android:text="@string/_Multiply"
+                android:onClick="onOperator"
+                style="@style/ActionButtonStyle"/>
+        </LinearLayout>
+        <!-- Row 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnThree"
+                android:text="@string/_3"
+                android:onClick="onDigit"
+                style="@style/NumberButtonStyle"/>
+            <Button
+                android:id="@+id/btnTwo"
+                android:text="@string/_2"
+                android:onClick="onDigit"
+                style="@style/NumberButtonStyle"/>
+            <Button
+                android:id="@+id/btnOne"
+                android:text="@string/_1"
+                android:onClick="onDigit"
+                style="@style/NumberButtonStyle"/>
+            <Button
+                android:id="@+id/btnSubtract"
+                android:text="@string/_Subtract"
+                android:onClick="onOperator"
+                style="@style/ActionButtonStyle"/>
+        </LinearLayout>
+        <!-- Row 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnDecimal"
+                android:text="@string/_Decimal"
+                android:onClick="onDecimalPoint"
+                style="@style/NumberButtonStyle"/>
+            <Button
+                android:id="@+id/btnZero"
+                android:text="@string/_0"
+                android:onClick="onDigit"
+                style="@style/NumberButtonStyle"/>
+            <Button
+                android:id="@+id/btnClear"
+                android:text="@string/clr"
+                android:onClick="onClear"
+                style="@style/ActionButtonStyle"/>
+            <Button
+                android:id="@+id/btnAdd"
+                android:text="@string/_Add"
+                android:onClick="onOperator"
+                style="@style/ActionButtonStyle"/>
+
+        </LinearLayout>
+        <!-- Row 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnEqual"
+                android:text="@string/_Equal"
+                android:onClick="onEqual"
+                style="@style/ActionButtonStyle"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
