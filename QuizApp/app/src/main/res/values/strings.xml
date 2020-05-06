@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="quiz_app">QuizApp</string>
+    <string name="tv_progress">%1d/%2d</string>
+    <!--Common formats:
+    %n$s->n that is currently the number of parameters (for example, 1 of%1 $ s represents the first parameter), s for the string
+    %n$d->n that is currently the number of parameters (for example, 1 in%1$d for the first parameter), and D for an integer
+    %n$f->n that is currently the number of parameters (such as 1 in%1$f for the first parameter), and F for floating-point numbers-->
+</resources>
